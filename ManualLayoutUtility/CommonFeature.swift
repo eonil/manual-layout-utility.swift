@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import AppKit
 import CoreGraphics
+import AppKit
 
 enum CommonFeature {
     case placeholder

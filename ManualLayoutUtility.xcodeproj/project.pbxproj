@@ -13,6 +13,12 @@
 		452BB61B1D43ACD900EA4BBD /* PieceMakerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452BB61A1D43ACD900EA4BBD /* PieceMakerUtility.swift */; };
 		452BB61C1D43ACD900EA4BBD /* PieceMakerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452BB61A1D43ACD900EA4BBD /* PieceMakerUtility.swift */; };
 		452BB61E1D43B00F00EA4BBD /* StackFlowDirectionTests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452BB61D1D43B00F00EA4BBD /* StackFlowDirectionTests_macOS.swift */; };
+		45813C2F1D43CC6F009CCEF6 /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45813C2E1D43CC6F009CCEF6 /* Axis.swift */; };
+		45813C301D43CC72009CCEF6 /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45813C2E1D43CC6F009CCEF6 /* Axis.swift */; };
+		45813C351D43CD30009CCEF6 /* PieceLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45813C341D43CD30009CCEF6 /* PieceLayout.swift */; };
+		45813C361D43CD30009CCEF6 /* PieceLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45813C341D43CD30009CCEF6 /* PieceLayout.swift */; };
+		45813C3A1D43CF02009CCEF6 /* FlexibleSizeFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45813C371D43CE15009CCEF6 /* FlexibleSizeFeatureTests.swift */; };
+		45813C3B1D43CF04009CCEF6 /* FlexibleSizeFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45813C371D43CE15009CCEF6 /* FlexibleSizeFeatureTests.swift */; };
 		45CDE79D1D43748300D4FB67 /* ManualLayoutUtility-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CDE79C1D43748300D4FB67 /* ManualLayoutUtility-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45CDE7A41D43748300D4FB67 /* ManualLayoutUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CDE79A1D43748300D4FB67 /* ManualLayoutUtility.framework */; };
 		45CDE7A91D43748300D4FB67 /* ManualLayoutUtility_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE7A81D43748300D4FB67 /* ManualLayoutUtility_iOSTests.swift */; };
@@ -27,8 +33,6 @@
 		45CDE7DB1D4374C500D4FB67 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE7D01D4374C500D4FB67 /* Protocols.swift */; };
 		45CDE7DC1D4374C500D4FB67 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE7D11D4374C500D4FB67 /* Piece.swift */; };
 		45CDE7DD1D4374C500D4FB67 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE7D11D4374C500D4FB67 /* Piece.swift */; };
-		45CDE7E01D4374C500D4FB67 /* StackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE7D31D4374C500D4FB67 /* StackLayout.swift */; };
-		45CDE7E11D4374C500D4FB67 /* StackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE7D31D4374C500D4FB67 /* StackLayout.swift */; };
 		45CDE7E21D4374C500D4FB67 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE7D41D4374C500D4FB67 /* Box.swift */; };
 		45CDE7E31D4374C500D4FB67 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE7D41D4374C500D4FB67 /* Box.swift */; };
 		45CDE7E41D4374C500D4FB67 /* Measuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE7D51D4374C500D4FB67 /* Measuring.swift */; };
@@ -66,6 +70,9 @@
 		452BB61A1D43ACD900EA4BBD /* PieceMakerUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceMakerUtility.swift; sourceTree = "<group>"; };
 		452BB61D1D43B00F00EA4BBD /* StackFlowDirectionTests_macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackFlowDirectionTests_macOS.swift; sourceTree = "<group>"; };
 		452BB61F1D43B33800EA4BBD /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		45813C2E1D43CC6F009CCEF6 /* Axis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Axis.swift; sourceTree = "<group>"; };
+		45813C341D43CD30009CCEF6 /* PieceLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceLayout.swift; sourceTree = "<group>"; };
+		45813C371D43CE15009CCEF6 /* FlexibleSizeFeatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleSizeFeatureTests.swift; sourceTree = "<group>"; };
 		45CDE78C1D43744F00D4FB67 /* ManualLayoutUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualLayoutUtilityTests.swift; sourceTree = "<group>"; };
 		45CDE79A1D43748300D4FB67 /* ManualLayoutUtility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ManualLayoutUtility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CDE79C1D43748300D4FB67 /* ManualLayoutUtility-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ManualLayoutUtility-iOS.h"; sourceTree = "<group>"; };
@@ -82,7 +89,6 @@
 		45CDE7CF1D4374C500D4FB67 /* CommonFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFeature.swift; sourceTree = "<group>"; };
 		45CDE7D01D4374C500D4FB67 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		45CDE7D11D4374C500D4FB67 /* Piece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
-		45CDE7D31D4374C500D4FB67 /* StackLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackLayout.swift; sourceTree = "<group>"; };
 		45CDE7D41D4374C500D4FB67 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		45CDE7D51D4374C500D4FB67 /* Measuring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measuring.swift; sourceTree = "<group>"; };
 		45CDE7D61D4374C500D4FB67 /* CoreGraphicsTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsTypeExtensions.swift; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		45CDE7EA1D4374CF00D4FB67 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45CDE7EB1D43780A00D4FB67 /* StackFlowDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackFlowDirection.swift; sourceTree = "<group>"; };
 		45E1DF221D439A480069E693 /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		45E7E1391D45028500C918D5 /* ManualLayoutUtility-macOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "ManualLayoutUtility-macOS.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +138,7 @@
 			children = (
 				45CDE7EA1D4374CF00D4FB67 /* README.md */,
 				452BB61F1D43B33800EA4BBD /* LICENSE.md */,
+				45E7E1391D45028500C918D5 /* ManualLayoutUtility-macOS.playground */,
 				45CDE77B1D43744F00D4FB67 /* ManualLayoutUtility */,
 				45CDE78B1D43744F00D4FB67 /* ManualLayoutUtilityTests */,
 				45CDE79B1D43748300D4FB67 /* ManualLayoutUtility-iOS */,
@@ -158,11 +166,12 @@
 				45CDE7CF1D4374C500D4FB67 /* CommonFeature.swift */,
 				45CDE7D01D4374C500D4FB67 /* Protocols.swift */,
 				45CDE7D11D4374C500D4FB67 /* Piece.swift */,
+				45813C341D43CD30009CCEF6 /* PieceLayout.swift */,
 				45CDE7D51D4374C500D4FB67 /* Measuring.swift */,
 				452BB60E1D439D5C00EA4BBD /* Arranging.swift */,
-				45CDE7D31D4374C500D4FB67 /* StackLayout.swift */,
 				45CDE7EB1D43780A00D4FB67 /* StackFlowDirection.swift */,
 				45CDE7D41D4374C500D4FB67 /* Box.swift */,
+				45813C2E1D43CC6F009CCEF6 /* Axis.swift */,
 				45CDE7D61D4374C500D4FB67 /* CoreGraphicsTypeExtensions.swift */,
 				45E1DF221D439A480069E693 /* Pipe.swift */,
 				45CDE7D71D4374C500D4FB67 /* Utility.swift */,
@@ -175,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				45CDE78C1D43744F00D4FB67 /* ManualLayoutUtilityTests.swift */,
+				45813C371D43CE15009CCEF6 /* FlexibleSizeFeatureTests.swift */,
 				452BB61A1D43ACD900EA4BBD /* PieceMakerUtility.swift */,
 			);
 			path = ManualLayoutUtilityTests;
@@ -398,11 +408,12 @@
 				45CDE7DA1D4374C500D4FB67 /* Protocols.swift in Sources */,
 				452BB6121D43A27900EA4BBD /* LayoutErrorRecovery.swift in Sources */,
 				45CDE7E21D4374C500D4FB67 /* Box.swift in Sources */,
+				45813C351D43CD30009CCEF6 /* PieceLayout.swift in Sources */,
 				45CDE7DC1D4374C500D4FB67 /* Piece.swift in Sources */,
 				45CDE7E41D4374C500D4FB67 /* Measuring.swift in Sources */,
 				45CDE7E61D4374C500D4FB67 /* CoreGraphicsTypeExtensions.swift in Sources */,
+				45813C2F1D43CC6F009CCEF6 /* Axis.swift in Sources */,
 				45CDE7EC1D43780A00D4FB67 /* StackFlowDirection.swift in Sources */,
-				45CDE7E01D4374C500D4FB67 /* StackLayout.swift in Sources */,
 				45E1DF231D439A480069E693 /* Pipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				452BB61B1D43ACD900EA4BBD /* PieceMakerUtility.swift in Sources */,
+				45813C3B1D43CF04009CCEF6 /* FlexibleSizeFeatureTests.swift in Sources */,
 				45CDE7CD1D4374A600D4FB67 /* ManualLayoutUtilityTests.swift in Sources */,
 				45CDE7A91D43748300D4FB67 /* ManualLayoutUtility_iOSTests.swift in Sources */,
 			);
@@ -421,7 +433,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45813C361D43CD30009CCEF6 /* PieceLayout.swift in Sources */,
 				45CDE7D91D4374C500D4FB67 /* CommonFeature.swift in Sources */,
+				45813C301D43CC72009CCEF6 /* Axis.swift in Sources */,
 				45CDE7E91D4374C500D4FB67 /* Utility.swift in Sources */,
 				452BB6101D439DCD00EA4BBD /* Arranging.swift in Sources */,
 				45CDE7DB1D4374C500D4FB67 /* Protocols.swift in Sources */,
@@ -430,7 +444,6 @@
 				45CDE7E51D4374C500D4FB67 /* Measuring.swift in Sources */,
 				45CDE7E71D4374C500D4FB67 /* CoreGraphicsTypeExtensions.swift in Sources */,
 				45CDE7ED1D43780A00D4FB67 /* StackFlowDirection.swift in Sources */,
-				45CDE7E11D4374C500D4FB67 /* StackLayout.swift in Sources */,
 				45E1DF241D439A5D0069E693 /* Pipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +455,7 @@
 				452BB61C1D43ACD900EA4BBD /* PieceMakerUtility.swift in Sources */,
 				45CDE7CE1D4374A600D4FB67 /* ManualLayoutUtilityTests.swift in Sources */,
 				452BB61E1D43B00F00EA4BBD /* StackFlowDirectionTests_macOS.swift in Sources */,
+				45813C3A1D43CF02009CCEF6 /* FlexibleSizeFeatureTests.swift in Sources */,
 				45CDE7C51D43749000D4FB67 /* ManualLayoutUtility_macOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
