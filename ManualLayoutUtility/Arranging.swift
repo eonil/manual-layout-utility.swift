@@ -8,7 +8,7 @@
 
 import CoreGraphics
 
-public extension PieceProtocol {
+public extension Piece {
     public func arrange(in bounds: CGRect) -> Box<Feature> {
         switch layout {
         case .over:

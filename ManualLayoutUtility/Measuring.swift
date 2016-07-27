@@ -11,9 +11,9 @@ import CoreGraphics
 //private protocol MeasurableFeaturePieceProtocol: PieceProtocol {
 //    associatedtype Feature: Measurable
 //}
-public extension PieceProtocol {
+public extension Piece {
     /// Resolves a size that fits within the budget as much as possible.
-    public func sizeThatFits(budget: CGSize) -> CGSize {
+    func sizeThatFits(budget: CGSize) -> CGSize {
         /// Uses dynamic type query to simplify implementation.
         /// I think it's also possible to make it fully static,
         /// but also needs to make many duplicated code which is

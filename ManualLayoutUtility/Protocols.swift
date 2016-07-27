@@ -17,7 +17,7 @@ public protocol Measurable {
     func sizeThatFits(budget: CGSize) -> CGSize
 }
 
-public protocol PieceProtocol: Measurable {
+protocol PieceProtocol: Measurable {
     associatedtype Feature
     var feature: Feature? { get }
     /// However feature is sized, feature size cannot overflow this constraints.

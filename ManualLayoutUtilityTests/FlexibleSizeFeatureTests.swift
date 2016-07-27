@@ -41,7 +41,7 @@ class FlexibleSizeFeatureTests: XCTestCase {
             case f300
             func sizeThatFits(budget: CGSize) -> CGSize {
                 switch self {
-                case .f100: return CGSize(width: 100, height: 100)
+                case .f100: return CGSize(width: 100, height: 300)
                 case .f300: return CGSize(width: 300, height: 100)
                 }
             }
