@@ -31,7 +31,7 @@ public extension StackFlowDirection {
     }
 }
 extension StackFlowDirection {
-    func getAxis() -> StackAxis {
+    func getAxis() -> Axis {
         switch self {
         case .leadingToTrailing:    return .x
         case .trailingToLeading:    return .x
@@ -54,7 +54,7 @@ extension StackFlowDirection {
             }
         #endif
         #if os(iOS)
-            let d = NSApplication.sharedApplication().userInterfaceLayoutDirection
+            let d = UIApplication.sharedApplication().userInterfaceLayoutDirection
             switch self {
             case .leadingToTrailing:    MARK_unimplemented()
             case .trailingToLeading:    MARK_unimplemented()

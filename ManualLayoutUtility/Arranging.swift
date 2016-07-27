@@ -17,6 +17,7 @@ public extension Piece {
             return arrange(in: bounds, stack: flow)
         }
     }
+
     private func arrange(in bounds: CGRect, over _: ()) -> Box<Feature> {
         let sbs = subpieces.map({ p -> Box<Feature> in
             let sz = p.getMinSize() | atMost(bounds.size)
@@ -29,15 +30,11 @@ public extension Piece {
     }
     private func arrange(in bounds: CGRect, stack flow: StackFlowDirection) -> Box<Feature> {
         let axis = flow.getAxis()
-//        let maxSize = getMaxSize()
-//        let minSize = getMinSize()
-//        let maxLen = maxSize.length(in: axis) | atMost(CGFloat.max)
-//        let maxVol = maxSize.volume(in: axis) | atMost(bounds.size.volume(in: axis))
         let maxBudget = CGSize(axis: axis, length: CGFloat.max, volume: bounds.size.volume(in: axis))
         let szs = subpieces.map({ p in p.sizeThatFits(maxBudget) })
         let len = szs.map({ sz in sz.length(in: axis) }).reduce(0, combine: +)
         var f = bounds.midEdge(axis).displaced(axis, displacement: -len/2)
-        let subboxes = zip(subpieces, szs).considering(flow).map({ sp, sz -> Box<F> in
+        let subboxes = zip(subpieces, szs).considering(flow).map({ sp, sz -> Box<Feature> in
             let c = sp.constraint(in: axis)
             let b1 = f.maxEdge(axis)
             let l1 = sz.length(in: axis) | atLeast(c.min) | atMost(c.max)
@@ -53,3 +50,16 @@ public extension Piece {
                    subboxes: subboxes)
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

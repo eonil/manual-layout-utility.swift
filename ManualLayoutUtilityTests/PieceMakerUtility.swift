@@ -21,6 +21,12 @@ func makeFixedSizedPiece<F>(feature: F, _ size: CGSize) -> Piece<F> {
                     layout: PieceLayout.over,
                     subpieces: [])
 }
+func makeFlexibleSizedPiece<F>(feature: F, _ min: CGSize, _ max: CGSize) -> Piece<F> {
+    return Piece<F>(feature: feature,
+                    constraints: SizeConstraint((min.width, max.width), (min.height, max.height)),
+                    layout: PieceLayout.over,
+                    subpieces: [])
+}
 func makePlaceholderPiece(size: CGSize) -> Piece<CommonFeature> {
     return Piece<CommonFeature>(feature: .placeholder,
                                 constraints: SizeConstraint((size.width, size.width), (size.height, size.height)),

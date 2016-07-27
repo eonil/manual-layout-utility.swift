@@ -27,7 +27,7 @@ func + (a: CGSize, b: NSEdgeInsets) -> CGSize {
 }
 
 extension CGPoint {
-    init(axis: StackAxis, position: CGFloat) {
+    init(axis: Axis, position: CGFloat) {
         switch axis {
         case .x:
             x = position
@@ -37,7 +37,7 @@ extension CGPoint {
             y = position
         }
     }
-    func position(on axis: StackAxis) -> CGFloat {
+    func position(on axis: Axis) -> CGFloat {
         switch axis {
         case .x:    return x
         case .y:    return y
@@ -48,7 +48,7 @@ extension CGSize {
     init(_ width: CGFloat, _ height: CGFloat) {
         self = CGSize(width: width, height: height)
     }
-    init(axis: StackAxis, length: CGFloat, volume: CGFloat) {
+    init(axis: Axis, length: CGFloat, volume: CGFloat) {
         switch axis {
         case .x:
             width = length
@@ -58,13 +58,13 @@ extension CGSize {
             height = length
         }
     }
-    func length(in axis: StackAxis) -> CGFloat {
+    func length(in axis: Axis) -> CGFloat {
         switch axis {
         case .x:    return width
         case .y:    return height
         }
     }
-    func volume(in axis: StackAxis) -> CGFloat {
+    func volume(in axis: Axis) -> CGFloat {
         switch axis {
         case .x:    return height
         case .y:    return width
@@ -76,7 +76,7 @@ extension CGSize {
     }
 }
 extension CGRect {
-//    init(axis: StackAxis, midpoint: CGFloat, size: CGSize) {
+//    init(axis: Axis, midpoint: CGFloat, size: CGSize) {
 //        switch axis {
 //        case .x:
 //            origin = CGPoint(x: midpoint - size.width/2,
@@ -89,50 +89,50 @@ extension CGRect {
     func resized(to: CGSize) -> CGRect {
         return CGRect(x: midX - (to.width/2), y: midY - (to.width/2), width: to.width, height: to.height)
     }
-    func minEdge(axis: StackAxis) -> CGRect {
+    func minEdge(axis: Axis) -> CGRect {
         switch axis {
         case .x:    return CGRect(x: minX, y: minY, width: 0, height: height)
         case .y:    return CGRect(x: minX, y: minY, width: width, height: 0)
         }
     }
-    func midEdge(axis: StackAxis) -> CGRect {
+    func midEdge(axis: Axis) -> CGRect {
         switch axis {
         case .x:    return CGRect(x: midX, y: minY, width: 0, height: height)
         case .y:    return CGRect(x: minX, y: midY, width: width, height: 0)
         }
     }
-    func maxEdge(axis: StackAxis) -> CGRect {
+    func maxEdge(axis: Axis) -> CGRect {
         switch axis {
         case .x:    return CGRect(x: maxX, y: minY, width: 0, height: height)
         case .y:    return CGRect(x: minX, y: maxY, width: width, height: 0)
         }
     }
-    func displaced(axis: StackAxis, displacement: CGFloat) -> CGRect {
+    func displaced(axis: Axis, displacement: CGFloat) -> CGRect {
         switch axis {
         case .x:    return CGRect(x: minX + displacement, y: minY, width: width, height: height)
         case .y:    return CGRect(x: minX, y: minY + displacement, width: width, height: height)
         }
     }
-    func advanceMaxEdge(axis: StackAxis, length: CGFloat) -> CGRect {
+    func advanceMaxEdge(axis: Axis, length: CGFloat) -> CGRect {
         switch axis {
         case .x:    return CGRect(x: maxX, y: minY, width: length, height: height)
         case .y:    return CGRect(x: minX, y: maxY, width: width, height: length)
         }
     }
-    func resized(axis: StackAxis, to length: CGFloat) -> CGRect {
+    func resized(axis: Axis, to length: CGFloat) -> CGRect {
         switch axis {
         case .x:    return CGRect(x: midX - (length/2), y: minY, width: length, height: height)
         case .y:    return CGRect(x: minX, y: midY - (length/2), width: width, height: length)
         }
     }
-    func midpoint(on axis: StackAxis) -> CGFloat {
+    func midpoint(on axis: Axis) -> CGFloat {
         switch axis {
         case .x:    return midX
         case .y:    return midY
         }
     }
     @available(*,unavailable)
-    func length(in axis: StackAxis) -> CGFloat {
+    func length(in axis: Axis) -> CGFloat {
         return size.length(in: axis)
     }
 }

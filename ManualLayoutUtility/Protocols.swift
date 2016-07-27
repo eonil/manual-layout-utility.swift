@@ -8,7 +8,7 @@
 
 import CoreGraphics
 
-protocol Measurable {
+public protocol Measurable {
     /// If possible, return a size within the budget.
     /// Overflown size also can be accepted if you
     /// just claim a certain size.
@@ -37,11 +37,11 @@ public typealias LengthConstraint =  (min: CGFloat, max: CGFloat)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 extension PieceProtocol {
-    func capacity(in axis: StackAxis) -> CGFloat {
+    func capacity(in axis: Axis) -> CGFloat {
         let c = constraint(in: axis)
         return c.max - c.min | atLeast(0)
     }
-    func constraint(in axis: StackAxis) -> LengthConstraint {
+    func constraint(in axis: Axis) -> LengthConstraint {
         switch axis {
         case .x:    return constraints.width
         case .y:    return constraints.height
