@@ -1,3 +1,6 @@
+**ARCHIVED** I suspect usefulness of this library is also lacks enoug time to work on. 
+I have limited time, and need to concentrate on essential stuff for me...
+
 ManualLayoutUtility
 ===================
 Hoon H.
